@@ -25,15 +25,15 @@ const theme = createMuiTheme({
 const IndexPage = () => {
   return (
     <ThemeProvider theme={theme}>
+      <Nav />
+      <Banner />
       <Container maxWidth="xl">
-        <Nav />
-        <Banner />
         <Services />
         <About />
         <Contact />
         <Forms />
-        <Footer />
       </Container>
+      <Footer />
     </ThemeProvider>
   )
 }
